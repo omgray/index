@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>omgray</title>
+  <link rel="stylesheet" href="style.css">
+    
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Jumbotron -->
+  <div class="header text-center">
+    <div class="header-text">
+      <p>Hello, I'm Ray! Graphic designer and javascript web developer!</p>
+      <p>Thank you for visiting my website!</p>
+    </div>
+    <img src="images/me.png" alt="" class="header-img justify-content-end">    
+  </div>
+  
+<!-- Navigation -->
+<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+ <a class="navbar-brand" href="#">omgray</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+  
+<!-- Instafeed stuff populates here -->
+<div id="instafeed-container"></div>
+<div id="instafeed-mobile"></div>
+
+<!-- Services  -->
+<div class="container-fluid services">
+  <div class="row text-center">
+      <h2 class="service-text">Services Include:</h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 text-center service-div" id="service1">
+      <p class="blurb-text">Branding</p>
+      <img class="icons" src="images/branding.png" alt="branding">
+      <ul class="list">
+        <li>Logo Design</li>
+        <li>Business Cards</li>
+        <li>Flyers and Brochures</li>
+      </ul>
+    </div>
+    <div class="col-sm-3 text-center service-div" id="service2">
+      <p class="blurb-text">Web Development</p>
+      <img class="icons" src="images/web.png" alt="web">
+      <ul class="list">
+        <li>Front End Development</li>
+        <li>Custom Website Templates</li>
+        <li>Content Management</li>
+      </ul>
+    </div>
+    <div class="col-sm-3 text-center service-div" id="service3">
+      <p class="blurb-text">Illustration</p>
+      <img class="icons" src="/images/illustr.png" alt="illustrations">
+      <ul class="list">
+        <li>Portraits</li>
+        <li>Vector Art</li>
+        <li>Digital Icons</li>
+      </ul>
+    </div>
+    <div class="col-sm-3 text-center service-div" id="service4">
+      <p class="blurb-text">Custom Commissions</p>
+      <img class="icons" src="images/other.png" alt="other">
+      <ul class="list">
+        <li>Album Artwork</li>
+        <li>Social Media Content</li>
+        <li>Book/Magazine Layout</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Blurbs -->
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <span class="tagline">Brands I've Worked With</span>
+    </div>
+    <div class="row">
+      <div class="col-sm-4"><img src="images/logo1.png" alt="" class="imgs"></div>
+      <div class="col-sm-4"><img src="images/logo2.png" alt="" class="imgs"></div>
+      <div class="col-sm-4"><img src="images/logo3.png" alt="" class="imgs"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="jumbotron footer">
+  <span>&copy; 2020 omg.ray / Ray Lopez</span> <br>
+  <a href="https://github.com/omgray"><i class='fa fa-github' style='font-size:36px;color:white'></i></a>
+  <a href="https://instagram.com/omg.ray"><i class='fa fa-instagram' style='font-size:36px;color:white'></i></a>
+  <a href="https://omgray.com"><i class='fa fa-wordpress' style='font-size:36px;color:white'></i></a>
+
+</div>
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+  <script type="text/javascript">
+
+
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    resolution: 'standard_resolution',
+    limit: 24,
+		accessToken: 'IGQVJVaEZANX1RGeUxZANkNUTHJYQTlSUVY4NU02TmdKZAS1aeThTNkhYLW9hSE81dVJubzBjZA0tpUHNWYTN3WkM2Q1ZA0Q1k1SnQ4bGFwSWh0cjZAmYi00ZAWVOYXhOTFctam5fQUN2NWFRSDk4YkgxWmVEMwZDZD',
+    template: 
+        '<a href="{{link}}" target="_blank"><img class="igpost d-none d-md-inline" title="View Project On Instagram!" src="{{image}}" /></a>'
+	});
+	userFeed.run();
+    
+    var userFeedMobile = new Instafeed({
+		get: 'user',
+		target: "instafeed-mobile",
+    resolution: 'low_resolution',
+    limit: 24,
+		accessToken: 'IGQVJVaEZANX1RGeUxZANkNUTHJYQTlSUVY4NU02TmdKZAS1aeThTNkhYLW9hSE81dVJubzBjZA0tpUHNWYTN3WkM2Q1ZA0Q1k1SnQ4bGFwSWh0cjZAmYi00ZAWVOYXhOTFctam5fQUN2NWFRSDk4YkgxWmVEMwZDZD',
+    template: 
+        '<a href="{{link}}" target="_blank"><img class="igpost-m d-md-none" title="View this project on Instagram!" src="{{image}}" /></a>'
+	});
+	userFeedMobile.run();
+  
+  var modal = document.getElementById("igModal");
+  var img = document.getElementById("myImg"); 
+  var modalImg = document.getElementById("img01");
+
+  var posts = document.getElementsByClassName("igpost");
+  console.log(posts);
+
+  $(document).ready(function(){
+
+    $(".header-img").animate({
+      left: '6vw',
+      opacity: '1',
+    }, "slow", function() {
+      $(".header-text").animate({
+      left: '1vw',
+      opacity: '1',
+    }, "slow");
+
+    $(".igpost").hover(function(){
+      $(this).css({"opacity":"0.7", "transition":".5s"});
+    }, function() {
+      $(this).css("opacity", "1");
+    });
+    
+                   
+    $(window).scroll(function() {
+      var hT = $("#service1").offset().top,
+          hH = $("#service1").outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop();
+      if (wS > (hT+hH-wH) && (hT>wS) && (wS+wH > hT+hH)) {
+        $("#service1").animate({
+          left: '1vw',
+          opacity: '1'
+        }, 400, function() {
+          $("#service2").animate({
+            left: '1vw',
+            opacity: '1'
+          }, 400, function() {
+            $("#service3").animate({
+              left: '1vw',
+              opacity: '1'
+            }, 400, function() {
+              $("#service4").animate({
+                left: '1vw',
+                opacity: '1'
+              })
+            })
+          })
+        })
+      }   
+    })
+
+    });
+
+
+
+
+});
+	</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+.container-fluid {
+    padding: 0;
+}
+.igpost {
+    max-width: 25%;
+  cursor: pointer;
+}
+.igpost-m {
+    max-width: 50%;
+}
+.header-img {
+  max-width: 50%;
+  position: relative;
+  right: 30vw;
+  opacity: 0;
+}
+.header-text {
+  display: inline-block;
+  position: relative;
+  right: 60vw;
+  opacity: 0;
+  font-size: 1.5vw;
+}
+.header {
+    background-color: #2D6072;
+  color: white;
+  height: auto;
+  margin: 0;
+  padding: 2rem;
+  padding-bottom: 0%;
+}
+.navbar {
+  background-color: #2D6072;
+}
+div.header {
+        margin-top: 2rem;
+}
+#igModal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.close {
+  position: absolute;
+  top: 65px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.services {
+  background-color:#2D6072;
+  color: white;
+}
+.service-text {
+  margin: 0 auto;
+  padding: 2rem;
+}
+.blurb-text {
+  font-size: 1.5rem;
+ }
+ .icons {
+   margin: 0 auto;
+   max-width: 50%;
+ }
+ .list {
+   list-style-type: none;
+ }
+ .service-div {
+   position: relative;
+   right: 30vw;
+   opacity: 0;
+ }
+ .imgs {
+     max-height: 75%;
+     max-width: 75%;
+ }
+ .tagline {
+   color: #2D6072;
+   font-size: 2.5rem;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   top: 50px;
+}
+ .web {
+    max-width: 100%;
+    transition: .5s ease;
+}
+.web:hover {
+    opacity: 0.7;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2D6072;
+}
+.col-sm-4:hover .overlay {
+    opacity: 1;
+  }
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+div.col-sm-12 {
+    padding: 30px;
+}
+.footer {
+    background-color: #2D6072;
+    color: white;
+    margin-bottom: 0;
+}
+i {
+    margin: 25px;
+}
