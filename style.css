@@ -163,6 +163,15 @@ button[type="submit"]:hover {
   margin: 0 auto;
   border-radius: 8px;
 }
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
 /* Gallery CSS */
 .col-md-3 {
   padding: 0px;
