@@ -149,6 +149,7 @@ button[type="submit"] {
   font-size: 20px;
   color: #2D6072;
   margin: 20px 0px;
+  transition: 0.3s ease background-color;
 }
 button[type="submit"]:hover {
   background-color: #2D6072;
