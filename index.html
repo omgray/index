@@ -164,7 +164,7 @@
 		get: 'user',
 		target: "instafeed-container",
     resolution: 'standard_resolution',
-    limit: 24,
+    limit: 16,
 		accessToken: 'IGQVJVaEZANX1RGeUxZANkNUTHJYQTlSUVY4NU02TmdKZAS1aeThTNkhYLW9hSE81dVJubzBjZA0tpUHNWYTN3WkM2Q1ZA0Q1k1SnQ4bGFwSWh0cjZAmYi00ZAWVOYXhOTFctam5fQUN2NWFRSDk4YkgxWmVEMwZDZD',
     template: 
         '<a href="{{link}}" target="_blank"><img class="igpost d-none d-md-inline" title="View Project On Instagram!" src="{{image}}" /></a>'
@@ -175,12 +175,25 @@
 		get: 'user',
 		target: "instafeed-mobile",
     resolution: 'low_resolution',
-    limit: 24,
+    limit: 16,
 		accessToken: 'IGQVJVaEZANX1RGeUxZANkNUTHJYQTlSUVY4NU02TmdKZAS1aeThTNkhYLW9hSE81dVJubzBjZA0tpUHNWYTN3WkM2Q1ZA0Q1k1SnQ4bGFwSWh0cjZAmYi00ZAWVOYXhOTFctam5fQUN2NWFRSDk4YkgxWmVEMwZDZD',
     template: 
         '<a href="{{link}}" target="_blank"><img class="igpost-m d-md-none" title="View this project on Instagram!" src="{{image}}" /></a>'
 	});
 	userFeedMobile.run();
+	  
+	/* window.addEventListener("DOMContentLoaded", function() {
+	// get form elements defined in the form HMTL
+		var form = document.getElementByID("my-form");
+		var status = document.getElementByID("status");
+		
+		// success and error handling
+		function success() {
+			form.reset();
+			status.classList.add("success");
+			status.innerHTML = "Thanks!"
+		}
+	}) */
 
 
   $(document).ready(function(){
