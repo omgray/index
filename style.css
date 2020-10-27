@@ -46,7 +46,7 @@ font-size: 40px;
 font-weight: bold;
 transition: 0.3s;
 }
-.logos {
+div#logos1, div#logos2, div#logos3, div#logos4 {
   bottom: 1vh;
   opacity: 0;
 }
