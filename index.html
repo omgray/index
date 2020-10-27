@@ -18,15 +18,15 @@
 <!-- Jumbotron -->
   <div class="header text-center">
     <div class="header-text">
-      <p>Hello, I'm Ray! Graphic designer and javascript web developer!</p>
-      <p>Thank you for visiting my website!</p>
+      <p>Hi, I'm Ray! Graphic designer & web developer!</p>
+      <p>Thanks for visiting! Check out the <a href="gallery.html">gallery</a> or scroll for more!</p>
     </div>
     <img src="images/me.png" alt="" class="header-img justify-content-end">    
   </div>
   
 <!-- Navigation -->
 <nav class="navbar navbar-dark navbar-expand-md fixed-top">
- <a class="navbar-brand" href="#">omgray</a>
+ <a class="navbar-brand" href="index.html">omgray</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -36,20 +36,48 @@
         <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="http://omgray.com">Blog</a>
       </li>    
     </ul>
   </div>  
 </nav>
-
-
+<!-- Blurbs -->
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <span class="tagline">Logo Design</span>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 logos" id="logos1"><img src="images/logo1.png" alt="" class="imgs"></div>
+      <div class="col-sm-3 logos" id="logos2"><img src="images/logo2.png" alt="" class="imgs"></div>
+      <div class="col-sm-3 logos" id="logos3"><img src="images/logo3.png" alt="" class="imgs"></div>
+      <div class="col-sm-3 logos" id="logos4"><img src="images/logo4.png" alt="" class="imgs"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <span class="tagline">Web Design</span>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 justify-content-center" id="web1">
+          <img src="images/web1.png" alt="" class="web">
+          <a href="http://spellerstreet.com"><div class="overlay text-center"><span class="text">Speller Street Project</span></div></a>
+      </div>
+      <div class="col-sm-4 justify-content-center" id="web2">
+          <img src="images/web2.png" alt="" class="web">
+          <a href="http://spellerstreet.com"><div class="overlay text-center"><span class="text">DSC Home Page Clone</span></div></a>
+      </div>
+      <div class="col-sm-4 justify-content-center" id="web3">
+          <img src="images/web3.png" alt="" class="web">
+          <a href="http://spellerstreet.com"><div class="overlay text-center"><span class="text">Studio Ghibli API Demo</span></div></a>
+      </div>
+  </div>
   
-<!-- Instafeed stuff populates here -->
-<div id="instafeed-container"></div>
-<div id="instafeed-mobile"></div>
+  </div>
+</div>
 
 <!-- Services  -->
 <div class="container-fluid services">
@@ -96,19 +124,6 @@
   </div>
 </div>
 
-<!-- Blurbs -->
-<div class="container-fluid text-center">
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <span class="tagline">Brands I've Worked With</span>
-    </div>
-    <div class="row">
-      <div class="col-sm-4"><img src="images/logo1.png" alt="" class="imgs"></div>
-      <div class="col-sm-4"><img src="images/logo2.png" alt="" class="imgs"></div>
-      <div class="col-sm-4"><img src="images/logo3.png" alt="" class="imgs"></div>
-    </div>
-  </div>
-</div>
 <hr>
 <!-- Contact Form -->
 <div class="container-fluid text-center">
@@ -116,19 +131,23 @@
     <div class="col-sm-6">
       <div class="blurb">
         <h2 class="">Need some work done? Contact me today!</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio alias, repudiandae reiciendis qui earum velit aliquam facere esse, saepe inventore quas corporis omnis ex non architecto eveniet? Placeat, magni! Inventore.</p>
+        <p>Contact me via <a href="mailto:name@email.com">email</a> to get started, or keep up with me on <a href="http://instagram.com/omg.ray">Instagram</a> (I answer messages on those as well). Please do not be afraid to inquire, it costs nothing to get information! Let’s talk.
+        </p> <hr>
+        <p>
+          50% deposit required before any work begins. Fixed rates are as follows, although prices are always subject to change according to the budget of the client. Email or message me about pricing!
+        </p>
       </div>
 
     </div>
 
     <div class="col-sm-6">
-      <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">
+      <form action="https://formspree.io/f/xoqpdgnw" method="POST" id="my-form">
         <div class="form-group">
           <label for="firstname">First Name</label>
           <input type="text" id="firstname" name="firstname">
         </div>
         <div class="form-group">
-          <label for="lastname">Last Name</label>
+          <label for="lastanem">Last Name</label>
           <input type="text" id="lastname" name="lastname">
         </div>
         <div class="form-group">
@@ -137,12 +156,12 @@
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <textarea name="message" id="message" cols="30" rows="3"></textarea>
         </div>
         <button type="submit">Submit</button>
       </form>
+      <div id="status"></div>
     </div>
-	<div id="status"></div>
   </div>
 </div>
 
@@ -156,45 +175,54 @@
 
 </div>
 
-	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
   <script type="text/javascript">
 
+window.addEventListener("DOMContentLoaded", function() {
 
-	var userFeed = new Instafeed({
-		get: 'user',
-		target: "instafeed-container",
-    resolution: 'standard_resolution',
-    limit: 16,
-		accessToken: 'IGQVJVaEZANX1RGeUxZANkNUTHJYQTlSUVY4NU02TmdKZAS1aeThTNkhYLW9hSE81dVJubzBjZA0tpUHNWYTN3WkM2Q1ZA0Q1k1SnQ4bGFwSWh0cjZAmYi00ZAWVOYXhOTFctam5fQUN2NWFRSDk4YkgxWmVEMwZDZD',
-    template: 
-        '<a href="{{link}}" target="_blank"><img class="igpost d-none d-md-inline" title="View Project On Instagram!" src="{{image}}" /></a>'
-	});
-	userFeed.run();
-    
-    var userFeedMobile = new Instafeed({
-		get: 'user',
-		target: "instafeed-mobile",
-    resolution: 'low_resolution',
-    limit: 16,
-		accessToken: 'IGQVJVaEZANX1RGeUxZANkNUTHJYQTlSUVY4NU02TmdKZAS1aeThTNkhYLW9hSE81dVJubzBjZA0tpUHNWYTN3WkM2Q1ZA0Q1k1SnQ4bGFwSWh0cjZAmYi00ZAWVOYXhOTFctam5fQUN2NWFRSDk4YkgxWmVEMwZDZD',
-    template: 
-        '<a href="{{link}}" target="_blank"><img class="igpost-m d-md-none" title="View this project on Instagram!" src="{{image}}" /></a>'
-	});
-	userFeedMobile.run();
-	  
-	/* window.addEventListener("DOMContentLoaded", function() {
-	// get form elements defined in the form HMTL
-		var form = document.getElementByID("my-form");
-		var status = document.getElementByID("status");
-		
-		// success and error handling
-		function success() {
-			form.reset();
-			status.classList.add("success");
-			status.innerHTML = "Thanks!"
-		}
-	}) */
+// get the form elements defined in your form HTML above
 
+var form = document.getElementById("my-form");
+// var button = document.getElementById("my-form-button");
+var status = document.getElementById("status");
+
+// Success and Error functions for after the form is submitted
+
+function success() {
+  form.reset();
+  status.classList.add("success");
+  status.innerHTML = "Thank you for the submission!";
+}
+
+function error() {
+  status.innerHTML = "Oops! There was a problem.";
+  status.classList.add("error")
+}
+
+// handle the form submission event
+
+form.addEventListener("submit", function(ev) {
+  ev.preventDefault();
+  var data = new FormData(form);
+  ajax(form.method, form.action, data, success, error);
+});
+});
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+var xhr = new XMLHttpRequest();
+xhr.open(method, url);
+xhr.setRequestHeader("Accept", "application/json");
+xhr.onreadystatechange = function() {
+  if (xhr.readyState !== XMLHttpRequest.DONE) return;
+  if (xhr.status === 200) {
+    success(xhr.response, xhr.responseType);
+  } else {
+    error(xhr.status, xhr.response, xhr.responseType);
+  }
+};
+xhr.send(data);
+}
 
   $(document).ready(function(){
 
@@ -206,12 +234,6 @@
       left: '1vw',
       opacity: '1',
     }, "slow");
-
-    $(".igpost").hover(function(){
-      $(this).css({"opacity":"0.7", "transition":".5s"});
-    }, function() {
-      $(this).css("opacity", "1");
-    });
     
                    
     $(window).scroll(function() {
@@ -241,7 +263,59 @@
         })
       }   
     })
-    });
+
+    $(window).scroll(function() {
+      var hT = $("#logos1").offset().top,
+          hH = $("#logos1").outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop();
+      if (wS > (hT+hH-wH) && (hT>wS) && (wS+wH > hT+hH)) {
+        $("#logos1").animate({
+          bottom: '3vw',
+          opacity: '1'
+        }, 350, function() {
+          $("#logos2").animate({
+            bottom: '3vw',
+            opacity: '1'
+          }, 350, function() {
+            $("#logos3").animate({
+              bottom: '3vh',
+              opacity: '1'
+            }, 350, function() {
+              $("#logos4").animate({
+                bottom: '3vh',
+                opacity: '1'
+              }, 350)
+            })
+          })
+        })
+      }
+    })
+
+    $(window).scroll(function() {
+      var hT = $("#web1").offset().top,
+          hH = $("#web1").outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop();
+      if (wS > (hT+hH-wH) && (hT>wS) && (wS+wH > hT+hH)) {
+        $("#web1").animate({
+          bottom: '3vw',
+          opacity: '1'
+        }, 350, function() {
+          $("#web2").animate({
+            bottom: '3vw',
+            opacity: '1'
+          }, 350, function() {
+            $("#web3").animate({
+              bottom: '5vh',
+              opacity: '1'
+            }, 350)
+            })
+          })
+      }
+    })
+
+  });
 });
 	</script>
 </body>
