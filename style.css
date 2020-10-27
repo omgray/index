@@ -47,7 +47,7 @@ font-weight: bold;
 transition: 0.3s;
 }
 .logos {
-  bottom: 1vh;
+  bottom: 1vh; 
   opacity: 0;
 }
 .services {
