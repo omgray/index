@@ -50,6 +50,10 @@ div#logos1, div#logos2, div#logos3, div#logos4 {
   bottom: 1vh;
   opacity: 0;
 }
+.logos {
+  bottom: 1vh;
+  opacity: 0;
+}
 .services {
 background-color:#2D6072;
 color: white;
