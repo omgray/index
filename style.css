@@ -46,6 +46,10 @@ font-size: 40px;
 font-weight: bold;
 transition: 0.3s;
 }
+.logos {
+  bottom: 1vh;
+  opacity: 0;
+}
 .services {
 background-color:#2D6072;
 color: white;
