@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
 <title>omgray</title>
@@ -19,14 +19,14 @@
   <div class="header text-center">
     <div class="header-text">
       <p>Hi, I'm Ray! Graphic designer & web developer!</p>
-      <p>Thanks for visiting! Check out the <a href="gallery.html">gallery</a> or scroll for more!</p>
+      <p>Thank you for visiting!</p>
     </div>
     <img src="images/me.png" alt="" class="header-img justify-content-end">    
   </div>
   
 <!-- Navigation -->
 <nav class="navbar navbar-dark navbar-expand-md fixed-top">
- <a class="navbar-brand" href="index.html">omgray</a>
+ <a class="navbar-brand" href="index.html">omg.ray</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -44,6 +44,20 @@
     </ul>
   </div>  
 </nav>
+<!-- Quick About Section -->
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="about font-style">
+      <p class="tagline">About omg.ray</p>
+      <img src="images/omg.png" alt="omg logo" id="omg">
+      <p> omg.ray, AKA Ray Lopez, is a freelance graphic designer and web developer, specializing in branding and advertising solutions as well as front-end web development. Originally starting his journey as an artist, omg.ray delved deep into the world of graphic design and, later, software development. Need a logo for your business? Need a website built from scratch? Need a solution package that encompasses all of your needs? You're in the right place!</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <!-- Blurbs -->
 <div class="container-fluid text-center">
   <div class="row">
@@ -59,20 +73,31 @@
   </div>
   <div class="row">
     <div class="col-sm-12 text-center">
+      <span class="tagline">Stationary</span>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 stationary" id="stat1"><a href="images/stationaryb.png" target="_blank"><img src="images/stationaryb.png" alt="" class="imgs"></a>
+      </div>
+      <div class="col-sm-6 stationary" id="stat2"><a href="images/stationarye.png" target="_blank"><img src="images/stationarye.png" alt="" class="imgs"></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
       <span class="tagline">Web Design</span>
     </div>
     <div class="row">
       <div class="col-sm-4 justify-content-center" id="web1">
-          <img src="images/webicon1.png" alt="" class="web">
+          <img src="images/web1.png" alt="" class="web">
           <a href="http://spellerstreet.com"><div class="overlay text-center"><span class="text">Speller Street Project</span></div></a>
       </div>
       <div class="col-sm-4 justify-content-center" id="web2">
-          <img src="images/webicon2.png" alt="" class="web">
-          <a href="https://omgray.github.io/daytonastate/"><div class="overlay text-center"><span class="text">DSC Home Page Clone</span></div></a>
+          <img src="images/web2.png" alt="" class="web">
+          <a href="http://omgray.github.io/daytonastate"><div class="overlay text-center"><span class="text">DSC Home Page Clone</span></div></a>
       </div>
       <div class="col-sm-4 justify-content-center" id="web3">
-          <img src="images/webicon3.png" alt="" class="web">
-          <a href="https://omgray.github.io/ghibliapp/"><div class="overlay text-center"><span class="text">Studio Ghibli API Demo</span></div></a>
+          <img src="images/web34.png" alt="" class="web">
+          <a href="http://omgray.github.io/ghibliapp"><div class="overlay text-center"><span class="text">Studio Ghibli API Demo</span></div></a>
       </div>
   </div>
   
@@ -82,7 +107,7 @@
 <!-- Services  -->
 <div class="container-fluid services">
   <div class="row text-center">
-      <h2 class="service-text">Services Include:</h2>
+      <h2 class="service-text">Services List:</h2>
   </div>
   <div class="row">
     <div class="col-sm-3 text-center service-div" id="service1">
@@ -124,14 +149,16 @@
   </div>
 </div>
 
-<hr>
 <!-- Contact Form -->
+
 <div class="container-fluid text-center">
+  <span class="tagline text-center">Contact</span>
+
   <div class="row">
     <div class="col-sm-6">
       <div class="blurb">
         <h2 class="">Need some work done? Contact me today!</h2>
-        <p>Contact me via <a href="mailto:name@email.com">email</a> to get started, or keep up with me on <a href="http://instagram.com/omg.ray">Instagram</a> (I answer messages on those as well). Please do not be afraid to inquire, it costs nothing to get information! Let’s talk.
+        <p>Contact me via <a href="mailto:raymondjlopez1@gmail.com">email</a> to get started, or keep up with me on <a href="http://instagram.com/omg.ray">Instagram</a> (I answer messages on those as well). Please do not be afraid to inquire, it costs nothing to get information! Let’s talk.
         </p> <hr>
         <p>
           50% deposit required before any work begins. Fixed rates are as follows, although prices are always subject to change according to the budget of the client. Email or message me about pricing!
@@ -288,6 +315,24 @@ xhr.send(data);
               }, 350)
             })
           })
+        })
+      }
+    })
+
+    $(window).scroll(function() {
+      var hT = $("#stat1").offset().top,
+          hH = $("#stat1").outerHeight(),
+          wH = $(window).height(),
+          wS = $(this).scrollTop();
+      if (wS > (hT+hH-wH) && (hT>wS) && (wS+wH > hT+hH)) {
+        $("#stat1").animate({
+          bottom: '3vw',
+          opacity: '1'
+        }, 350, function() {
+          $("#stat2").animate({
+            bottom: '3vw',
+            opacity: '1'
+          }, 350)
         })
       }
     })
