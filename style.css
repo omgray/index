@@ -6,6 +6,17 @@
 body {
   overflow-x: hidden;
 }
+a {
+  color: #00c77b;
+}
+.font-style {
+  font-size: larger;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: none;
+  color: #4affba;
+}
 .container-fluid {
   padding: 0;
 }
@@ -21,7 +32,7 @@ display: inline-block;
 position: relative;
 right: 60vw;
 opacity: 0;
-font-size: 1.5vw;
+font-size: 3vh;
 }
 .header {
 background-color: #2D6072;
@@ -37,6 +48,9 @@ background-color: #2D6072;
 div.header {
 margin-top: 2rem;
 }
+#omg {
+  max-height: 250px;
+}
 .close {
 position: absolute;
 top: 65px;
@@ -46,9 +60,16 @@ font-size: 40px;
 font-weight: bold;
 transition: 0.3s;
 }
+.about {
+  padding: 25px;
+  color: #2D6072;
+}
 .logos {
   bottom: 1vh;
   opacity: 0;
+}
+.stationary {
+  max-height: 500px;
 }
 .services {
 background-color:#2D6072;
@@ -61,6 +82,11 @@ padding: 2rem;
 .blurb {
 margin: 25% 0;
 }
+#blurb {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(168, 168, 168);
+  }
 .blurb-text {
 font-size: 1.5rem;
 }
@@ -92,10 +118,13 @@ div.col-sm-12 {
   margin-bottom: 2rem;
 }
 .web {
-  max-width: 90%;
+  max-width: 100%;
   transition: .5s ease;
 }
 div#web1, div#web2, div#web3 {
+  opacity: 0;
+}
+div#stat1, div#stat2 {
   opacity: 0;
 }
 .col-sm-4:hover .overlay {
